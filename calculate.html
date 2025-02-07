@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Linking css-->
+    <link rel="stylesheet" href="style.css">
+    <title>Cookie Calculator</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="cookie.png">
+    <!--javascript-->
+    <script>
+        function calculate(){
+            var a = document.getElementById("amount").value; //check input
+
+            //process
+            var butter = (1 * a / 12).toFixed(2);
+            var sugar = (1.5 * a / 12).toFixed(2);
+            var flour = (2 * a / 12).toFixed(2);
+            var baking = (1 * a / 12).toFixed(2);
+            var chocolate = (1 * a / 12).toFixed(2);
+
+            //check if number is valid or not
+            if (a < 1 || isNaN(a)){
+                alert("Please enter Positive number or correct number.");
+            }else{
+                obj = document.getElementById("output").className = "boxround";
+                document.getElementById("butter").textContent = butter;
+                document.getElementById("sugar").textContent = sugar;
+                document.getElementById("flour").textContent = flour;
+                document.getElementById("bp").textContent = baking;
+                document.getElementById("pls").className = "unhide"
+                document.getElementById("chips").textContent = chocolate;
+            }
+        }
+            function checkthat(){
+                var b = document.getElementById("recipe").value;
+
+                if (b == "cookies"){
+                    calculate();
+                }else if(b == "cake"){
+                    calculated();
+                }else if(b == "bread"){
+                    calculatedd();
+                }
+            }
+
+            function calculated(){
+            var a = document.getElementById("amount").value; //check input
+
+            //process
+            var butter = (1 * a / 12).toFixed(2);
+            var sugar = (0.5 * a / 12).toFixed(2);
+            var flour = (1.75 * a / 12).toFixed(2);
+            var baking = (0.5 * a / 12).toFixed(2);
+
+            //check if number is valid or not
+            if (a < 1 || isNaN(a)){
+                alert("Please enter Positive number or correct number.");
+            }else{
+                obj = document.getElementById("output").className = "boxround";
+                document.getElementById("butter").textContent = butter;
+                document.getElementById("sugar").textContent = sugar;
+                document.getElementById("flour").textContent = flour;
+                document.getElementById("bp").textContent = baking
+                document.getElementById("pls").className = "hide"
+            }
+        }
+
+            function calculatedd(){
+            var a = document.getElementById("amount").value; //check input
+
+            //process
+            var butter = (1 * a / 12).toFixed(2);
+            var sugar = (0.5 * a / 12).toFixed(2);
+            var flour = (1.5 * a / 12).toFixed(2);
+            var baking = (0.5 * a / 12).toFixed(2);
+
+            //check if number is valid or not
+            if (a < 1 || isNaN(a)){
+                alert("Please enter Positive number or correct number.");
+            }else{
+                obj = document.getElementById("output").className = "boxround";
+                document.getElementById("butter").textContent = butter;
+                document.getElementById("sugar").textContent = sugar;
+                document.getElementById("flour").textContent = flour;
+                document.getElementById("bp").textContent = baking;
+                document.getElementById("pls").className = "hide"
+            }
+        }
+    </script>
+</head>
+<body style="background-color: rgb(255, 199, 120);"">
+    <!--Navigation bar (untuk tekan ke page lain)-->
+    <nav class="navbar">
+          <a href="index.html"><b>Cookie Calculator</b></a>
+            <div class="navbar-nav">
+              <a href="index.html">About</a>
+              <a href="calculat.html">Calculator</a>
+      </nav>
+
+    <br><br>
+    <h1>Cookie Calculator</h1>
+
+    <table class="boxround">
+        <tr>
+            <th style="text-align: center;">Type Of Cookies : 
+                <select id="recipe" class="text">
+                    <option value="cookies">Chocolate Cookies</option>
+                    <option value="cake">Classic Sugar Cookie</option>
+                    <option value="bread">Butter Cookie</option>
+                </select>
+            </th>
+        </tr>
+        <tr style="text-align: center;">
+            <th>Amount of Cookies : <input type="number" value="12" id="amount" class="text"></th>
+        </tr>
+        <tr style="text-align: center;">
+            <th><br><input type="button" value="Calculate" class="fakebutton" onclick="checkthat()"></th>
+        </tr>
+    </table>
+
+    <table id="output" class="hide">
+        <tr style="text-align: center;">
+            <th><h3>Ingredient :</h3><br></th>
+        </tr>
+        <tr>
+            <th><b id="butter">3</b> Cup Butter</th>
+        </tr>
+        <tr>
+            <th><b id="sugar">3</b> Cups Sugar</th>
+        </tr>
+        <tr>
+            <th><b id="flour">3</b> Cups Flour</th>
+        </tr>
+        <tr>
+             <th><b id="bp">3</b> Baking Powder</th>
+        </tr>
+        <tr id="pls">
+            <th><b id="chips">3</b> Cup Chocolate Chips</th>
+        </tr>
+    </table>
+</body>
+</html>

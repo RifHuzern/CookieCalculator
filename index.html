@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Linking css-->
+    <link rel="stylesheet" href="style.css">
+    <title>Cookie Calculator</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="cookie.png">
+    <script>
+        function chocolate(){
+            document.getElementById("cookie").className = "unhide";
+            document.getElementById("butter").className = "hide";
+            document.getElementById("classic").className = "hide";
+        }
+
+        function butter(){
+            document.getElementById("cookie").className = "hide";
+            document.getElementById("butter").className = "unhide";
+            document.getElementById("classic").className = "hide";
+        }
+
+        function classic(){
+            document.getElementById("cookie").className = "hide";
+            document.getElementById("butter").className = "hide";
+            document.getElementById("classic").className = "unhide";
+        }
+    </script>
+</head>
+<body>
+    <!--Navigation bar (untuk tekan ke page lain)-->
+    <nav class="navbar">
+          <a href="index.html"><b>Cookie Calculator</b></a>
+            <div class="navbar-nav">
+              <a href="index.html">About</a>
+              <a href="calculate.html">Calculator</a>
+      </nav>
+
+    <br><br>
+    <h1>About</h1>
+
+    <table class="tata">
+        <tr>
+            <th>Welcome to my cookie calculator website! This website is a tool for baking with exact quantity of your choice. The website will calculate how much ingredient you exactly need simply by putting how much cookies. By using my website, you can save your time and reduce your calculating work.</th>
+        </tr>
+        <tr>
+            <th style="text-align: center;"><br><input type="button" value="Chocolate Cookie" class="fakebutton" onclick="chocolate()">
+                <input type="button" value="Classic Sugar Cookie" class="fakebutton" onclick="classic()">
+                <input type="button" value="Butter Cookie" class="fakebutton" onclick="butter()">
+            </th>
+        </tr>
+        <tbody id="cookie" class="">
+        <tr>
+        <tr style="height: 50px;">
+            <th>Here is the ingredient for 12 Chocolate Cookie:</th>
+        </tr>
+        <tr>
+            <th><ul style="padding-left: 50px;">
+                <li>1 Cup Butter</li>
+                <li>1.5 Cups Sugar</li>
+                <li>2 Cups Flour</li>
+                <li>1 tsp Baking Powder</li>
+                <li>1 Cup Chocolate</li>
+            </ul></th>
+        </tr>
+        <th><br>Instruction :</th>
+            </tr>
+            <tr>
+                <th><ol style="padding-left: 50px; padding-right: 20px;" type="1">
+                    <li>Preheat the oven to 350°F (175°C). Line a baking sheet with parchment paper.</li>
+                    <li>Mix the dry ingredients: In a bowl, whisk together the flour, cocoa powder, baking soda, and salt.</li>
+                    <li>Cream the butter and sugars: In a separate bowl, beat the softened butter, granulated sugar, and brown sugar together until creamy and light.</li>
+                    <li>Combine dry and wet ingredients: Gradually mix the dry ingredients into the wet ingredients, stirring until just combined.</li>
+                    <li>Add chocolate chips: Fold in the chocolate until evenly distributed throughout the dough.</li>
+                    <li>Shape the dough: Scoop tablespoon-sized portions of dough and roll them into balls. Place the dough balls on the prepared baking sheet, spacing them about 2 inches apart.</li>
+                    <li>Flatten the dough: Gently press each cookie dough ball with a fork or your fingers to flatten slightly.</li>
+                    <li>Bake: Bake the cookies for 8-10 minutes or until the edges are set, and the centers are slightly soft (they will firm up as they cool).</li>
+                    <li>Cool: Let the cookies cool on the baking sheet for a few minutes before transferring them to a wire rack to cool completely.</li>
+                </ol></th>
+            </tr>
+        </tr>
+        </tbody>
+
+        <tbody id="classic" class="hide">
+            <tr style="height: 50px;">
+                <th>Here is the ingredient for 12 Classic Sugar Cookie:</th>
+            </tr>
+            <tr>
+                <th><ul style="padding-left: 50px;">
+                    <li>1 Cup Butter</li>
+                    <li>0.5 Cups Sugar</li>
+                    <li>1.75 Cups Flour</li>
+                    <li>0.5 tsp Baking Powder</li>
+                </ul></th>
+            </tr>
+            <tr>
+                <th><br>Instruction :</th>
+            </tr>
+            <tr>
+                <th><ol style="padding-left: 50px; padding-right: 20px;" type="1">
+                    <li>Preheat the oven to 350°F (175°C). Line a baking sheet with parchment paper.</li>
+                    <li>In a bowl, whisk together the flour, baking powder, and salt.</li>
+                    <li>In another bowl, cream together the butter and 3/4 cup sugar until light and fluffy.</li>
+                    <li>Beat in the egg, vanilla extract, and milk.</li>
+                    <li>Gradually add the dry ingredients to the butter mixture and mix until just combined.</li>
+                    <li>Scoop tablespoon-sized dough balls and roll them in the remaining 1/4 cup sugar.</li>
+                    <li>Place the dough balls on the prepared baking sheet, spacing them about 2 inches apart.</li>
+                    <li>Flatten each dough ball slightly with the back of a spoon or your fingers.</li>
+                    <li>Bake for 10 – 12 minutes or until the edges are lightly golden.</li>
+                    <li>Allow them to cool on the baking sheet for a few minutes before transferring to a wire rack.</li>
+                </ol></th>
+            </tr>
+        </tbody>
+
+        <tbody id="butter" class="hide">
+            <tr style="height: 50px;">
+                <th>Here is the ingredient for 12 butter Cookie:</th>
+            </tr>
+            <tr>
+                <th><ul style="padding-left: 50px;">
+                    <li>1 Cup Butter</li>
+                    <li>0.5 Cups Sugar</li>
+                    <li>1.5 Cups Flour</li>
+                    <li>0.5 tsp Baking Powder</li>
+                </ul></th>
+            </tr>
+            <tr>
+                <th><br>Instruction :</th>
+            </tr>
+            <tr>
+                <th><ol style="padding-left: 50px; padding-right: 20px;" type="1">
+                    <li>Preheat the oven to 350°F (175°C). Line a baking sheet with parchment paper.</li>
+                    <li>In a large bowl, cream together the butter and sugar until smooth.</li>
+                    <li>Gradually add the flour, mixing until just combined, roll them into balls.</li>
+                    <li>Place the dough balls on the baking sheet, spacing them about 2 inches apart.</li>
+                    <li>Flatten each cookie gently with a fork or your fingers.</li>
+                    <li>Bake for 10–12 minutes, or until the edges are lightly golden.</li>
+                    <li>Let the cookies cool on the baking sheet for a few minutes, then transfer them to a wire rack to cool completely.</li>
+                </ol></th>
+            </tr>
+        </tbody>
+
+        <tr style="text-align: center;">
+            <th><br>If you want to use the calculator, Click this button to redirect to calculator page.</th>
+        </tr>
+        <tr>
+            <th style="text-align: center;"><br><a href="calculate.html" class="fakebutton">Calculate</a></th>
+        </tr>
+    </table>
+</body>
+</html>
